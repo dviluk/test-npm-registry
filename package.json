@@ -1,0 +1,15 @@
+{
+  "name": "datatables.net-print-bs5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "prod": "uglifyjs -c -m --mangle-props reserved=[$,export,__JSON_DEFAULT_SETTINGS__,hasOwnValue,__jsonDefaultSettings__] --output dist/index.js  -- src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "uglify-js": "^3.17.3"
+  }
+}

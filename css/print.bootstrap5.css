@@ -1,0 +1,65 @@
+table.dataTable-print-utilss > tbody > tr > .selected {
+    background-color: rgba(13, 110, 253, 0.9);
+    color: white;
+  }
+  table.dataTable-print-utilss tbody td.select-checkbox,
+  table.dataTable-print-utilss tbody th.select-checkbox {
+    position: relative;
+  }
+  table.dataTable-print-utilss tbody td.select-checkbox:before, table.dataTable-print-utilss tbody td.select-checkbox:after,
+  table.dataTable-print-utilss tbody th.select-checkbox:before,
+  table.dataTable-print-utilss tbody th.select-checkbox:after {
+    display: block;
+    position: absolute;
+    top: 1.2em;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+  }
+  table.dataTable-print-utilss tbody td.select-checkbox:before,
+  table.dataTable-print-utilss tbody th.select-checkbox:before {
+    content: " ";
+    margin-top: -5px;
+    margin-left: -6px;
+    border: 1px solid black;
+    border-radius: 3px;
+  }
+  table.dataTable-print-utilss tr.selected td.select-checkbox:before,
+  table.dataTable-print-utilss tr.selected th.select-checkbox:before {
+    border: 1px solid white;
+  }
+  table.dataTable-print-utilss tr.selected td.select-checkbox:after,
+  table.dataTable-print-utilss tr.selected th.select-checkbox:after {
+    content: "✓";
+    font-size: 20px;
+    margin-top: -19px;
+    margin-left: -6px;
+    text-align: center;
+    text-shadow: 1px 1px #B0BED9, -1px -1px #B0BED9, 1px -1px #B0BED9, -1px 1px #B0BED9;
+  }
+  table.dataTable-print-utilss.compact tbody td.select-checkbox:before,
+  table.dataTable-print-utilss.compact tbody th.select-checkbox:before {
+    margin-top: -12px;
+  }
+  table.dataTable-print-utilss.compact tr.selected td.select-checkbox:after,
+  table.dataTable-print-utilss.compact tr.selected th.select-checkbox:after {
+    margin-top: -16px;
+  }
+  
+  div.dataTable-print-utilsss_wrapper span.select-info,
+  div.dataTable-print-utilsss_wrapper span.select-item {
+    margin-left: 0.5em;
+  }
+  
+  @media screen and (max-width: 640px) {
+    div.dataTable-print-utilsss_wrapper span.select-info,
+  div.dataTable-print-utilsss_wrapper span.select-item {
+      margin-left: 0;
+      display: block;
+    }
+  }
+  table.dataTable-print-utilss.table-sm tbody td.select-checkbox::before {
+    margin-top: -9px;
+  }
+  
